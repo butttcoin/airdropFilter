@@ -31,6 +31,7 @@ public class ParseAddressesFile {
              String line = reader.readLine();
              if(line==null){
                  hasNextSet = false;
+                 reader.close();
                  break;}
              addresses.add(line);
          }
